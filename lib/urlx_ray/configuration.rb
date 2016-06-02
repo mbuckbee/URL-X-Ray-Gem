@@ -6,7 +6,7 @@ module UrlxRay
     @base_uri = 'https://urlxray.expeditedaddons.com'
 
     # Your API Key
-    @api_key = 'TODO: Replace'
+    @api_key = ENV['URLXRAY_API_KEY']
 
     # create the getters and setters
     class << self
