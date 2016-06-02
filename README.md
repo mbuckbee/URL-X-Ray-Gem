@@ -18,6 +18,17 @@
 
 ## Usage
 
+### Input Parameter Descriptions
+
+| Index       | Name    | Example | Description |
+| --------------- | ------- | -------- |--------|
+|0|`url`|string|The URL to process|
+|1|`fetch_content`|boolean|If this URL responds with html, text, json or xml then return the response. This option is useful if you want to perform further processing on the URL content.|
+
+
+
+### Making a Request
+
 ```ruby
 require 'urlx_ray'
 
@@ -30,6 +41,10 @@ $ > uxr = UrlxRay::APIController.new
 
 $ > result = uxr.lookup("https://www.expeditedssl.com",false)
 
+```
+### Using Results
+
+```ruby
 $ > result.server_name
  => "nginx/1.4.1" 
 
@@ -98,12 +113,14 @@ $ > result.url_path
 
 ```
 
+
 ## Installation
 
 ```
 # In your Gemfile
 gem 'urlx_ray', git: 'https://github.com/mbuckbee/Url-X-Ray-Gem.git'
 ```    
+
 
 ## Result Attribute Descriptions
 
@@ -151,7 +168,7 @@ As a sanity check it is sometimes useful to bypass your app stack and check the 
 
 ```
 # Modify the following to use your actual API Key
-'https://urlxray.expeditedaddons.com/?api_key=USE_YOUR_URLXRAY_API_KEY&fetch_content=false&url=http%3A%2F%2Fwww.wikipedia.org'
+'https://urlxray.expeditedaddons.com/?api_key=REPLACE_WITH_YOUR_URLXRAY_API_KEY&fetch_content=false&url=http%3A%2F%2Fwww.wikipedia.org'
 ```
 
 A successful call will return your requested data with a HTTP result code of `200` and be in `JSON` format. We recommend the [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en) extension as a useful tool. 
