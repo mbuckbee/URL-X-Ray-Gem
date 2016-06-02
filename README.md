@@ -6,7 +6,7 @@
 
 <h1 align='center'>URL X-Ray</h1>
 
-## Pull website status and domain information for any URL.
+## Pull Website Status And Domain Information For Any Url.
 
 ## Requirements
 
@@ -211,6 +211,8 @@ Please email [support@expeditedaddons.com](mailto:support@expeditedaddons.com)
 The URL X-Ray gem is licensed under the MIT license.
 
 ## Additional Add-ons
+
+If you found URL X-Ray useful, please check out our other similarly structured services and gems.
 
 <table>
   <tr>
